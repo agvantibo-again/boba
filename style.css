@@ -66,9 +66,13 @@ body {
   border-radius: 1em;
   transition: transform 0.1s ease-in-out;
 
+  color: initial;
+  text-decoration: none;
+
   /* height: fit-content;
   width: fit-content; */
 }
+
 
 .tile .tile-text {
    margin-left: 2em;
