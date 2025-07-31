@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="global-container">
-      <div id="header">
+      <div class="title" id="header">
         <div class="verical-centered">
           <img
             src="./logo-500.png"
@@ -18,32 +18,71 @@
             id="logo"
             alt="логотип Bunny Boba"
           />
-          <h1 class="title" id="logo-text">Добро пожаловать!</h1>
+          <h1 id="logo-text">Добро пожаловать!</h1>
         </div>
       </div>
 
       <div id="main">
-        <div class="tiles-container">
+        <div class="tiles-container action-tiles-container">
           <a href="https://ya.ru/" class="tile">
-            <img class="tile-image" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Yandex_icon.svg">
+            <img
+              class="tile-image"
+              src="https://upload.wikimedia.org/wikipedia/commons/5/58/Yandex_icon.svg"
+            />
             <div class="tile-text">
-            <p>Ссылка на Яндекс?</p>
-            <p>Это просто образец</p>
+              <p>Ссылка на Яндекс?</p>
+              <p>Это просто образец</p>
             </div>
           </a>
           <a href="https://t.me/BunnyBobaBot" class="tile">
-            <img class="tile-image" src="./telegram-icon-new.svg" alt="New Telegram logo">
+            <img
+              class="tile-image"
+              src="./telegram-icon-new.svg"
+              alt="New Telegram logo"
+            />
             <div class="tile-text">
               <p>Бот Telegram</p>
               <p>Удобное оформление заказа</p>
             </div>
           </a>
         </div>
+        <h2 class="title" id="menu-title">Наше меню:</h2>
+        <div id="menu-container">
+          <details class="tiles-container menu-tiles-container" name="menu">
+            <summary>Напитки</summary>
+            <span class="tile" >Амброзия</span>
+            <span class="tile" >Конфузий</span>
+          </details>
+          <details class="tiles-container menu-tiles-container" name="menu">
+            <summary>Комбо</summary>
+            <span class="tile" >Комбо 1</span>
+            <span class="tile" >Комбо 2</span>
+          </details>
+          <details class="tiles-container menu-tiles-container" name="menu">
+            <summary>Сеты</summary>
+            <span class="tile" >Калифорния</span>
+            <span class="tile" >Филадельфия</span>
+            <span class="tile" >Детройт</span>
+          </details>
+          <details class="tiles-container menu-tiles-container" name="menu">
+            <summary>Супы</summary>
+            <span class="tile" >Суп с котом</span>
+            <span class="tile" >Интересное варево</span>
+          </details>
+          <details class="tiles-container menu-tiles-container" name="menu">
+            <summary>Салаты</summary>
+            <span class="tile" >Салат Чука</span>
+            <span class="tile" >Салат Гека</span>
+          </details>
+        </div>
       </div>
 
       <div id="footer">
         <ul>
-          <li>Сюда можно добавить ещё ссылки, например документы и лицензии, и контактную информацию</li>
+          <li>
+            Наш контактный телефон:
+            <a href="tel:+79362822882">+7 (936) 282-28-82</a>
+          </li>
           <li>
             <p>
               Дизайн <a href="https://github.com/agvantibo-again/">agvantibo</a>
