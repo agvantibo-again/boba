@@ -1,19 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bunny Boba</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./static/style.css" />
+    <link rel="icon" href="./static/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div id="global-container">
       <div class="title" id="header">
         <div class="verical-centered">
           <img
-            src="./logo-500.png"
+            src="./static/logo-500.png"
             class="logo-image responsive-image"
             id="logo"
             alt="логотип Bunny Boba"
@@ -24,56 +24,273 @@
 
       <div id="main">
         <div class="tiles-container action-tiles-container">
-          <a href="https://ya.ru/" class="tile">
+          <!-- <a href="https://ya.ru/" class="tile">
             <img
-              class="tile-image"
-              src="https://upload.wikimedia.org/wikipedia/commons/5/58/Yandex_icon.svg"
+              src="./yandex-icon.svg"
             />
             <div class="tile-text">
               <p>Ссылка на Яндекс?</p>
               <p>Это просто образец</p>
             </div>
-          </a>
+          </a> -->
           <a href="https://t.me/BunnyBobaBot" class="tile">
-            <img
-              class="tile-image"
-              src="./telegram-icon-new.svg"
-              alt="New Telegram logo"
-            />
+            <img src="./static/telegram-icon-new.svg" alt="New Telegram logo" />
             <div class="tile-text">
               <p>Бот Telegram</p>
               <p>Удобное оформление заказа</p>
             </div>
           </a>
         </div>
-        <h2 class="title" id="menu-title">Наше меню:</h2>
+        <h1 class="title" id="menu-title">Наше меню:</h2>
         <div id="menu-container">
-          <details class="tiles-container menu-tiles-container" name="menu">
-            <summary>Напитки</summary>
-            <span class="tile" >Амброзия</span>
-            <span class="tile" >Конфузий</span>
+
+          <details class="tiles-container menu-tiles-container">
+            <summary id="Комбо">Комбо</summary>
+
+            <div class="tile">
+              <img src="./static/menu/cmb-tomyum.webp" alt="Иллюстрация к блюду Том ям комбо ">
+              <div class="menu-text">
+                <h3>Том ям комбо </h3>
+                <p class="menu-price">999₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/cmb-miso.webp" alt="Иллюстрация к блюду Мисо комбо ">
+              <div class="menu-text">
+                <h3>Мисо комбо </h3>
+                <p class="menu-price">699₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/cmb-romantic.webp" alt="Иллюстрация к блюду Романтическое комбо">
+              <div class="menu-text">
+                <h3>Романтическое комбо</h3>
+                <p class="menu-price">1099₽</p>
+              </div>
+            </div>
+
           </details>
-          <details class="tiles-container menu-tiles-container" name="menu">
-            <summary>Комбо</summary>
-            <span class="tile" >Комбо 1</span>
-            <span class="tile" >Комбо 2</span>
+
+          <details class="tiles-container menu-tiles-container">
+            <summary id="Напитки">Напитки</summary>
+
+            <div class="tile">
+              <img src="./static/menu/boba-caramel.webp" alt="Иллюстрация к блюду Карамельная классика">
+              <div class="menu-text">
+                <h3>Карамельная классика</h3>
+                <p class="menu-price">349₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/boba-emerald.webp" alt="Иллюстрация к блюду Изумрудный дракон">
+              <div class="menu-text">
+                <h3>Изумрудный дракон</h3>
+                <p class="menu-price">349₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/boba-oolong.webp" alt="Иллюстрация к блюду Матча улун">
+              <div class="menu-text">
+                <h3>Матча улун</h3>
+                <p class="menu-price">399₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/boba-cheese.webp" alt="Иллюстрация к блюду Чиз берри">
+              <div class="menu-text">
+                <h3>Чиз берри</h3>
+                <p class="menu-price">499₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/boba-taibei.webp" alt="Иллюстрация к блюду Тайбей">
+              <div class="menu-text">
+                <h3>Тайбей</h3>
+                <p class="menu-price">349₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/boba-sparkle.webp" alt="Иллюстрация к блюду Спаркл">
+              <div class="menu-text">
+                <h3>Спаркл</h3>
+                <p class="menu-price">299₽</p>
+              </div>
+            </div>
+
           </details>
-          <details class="tiles-container menu-tiles-container" name="menu">
-            <summary>Сеты</summary>
-            <span class="tile" >Калифорния</span>
-            <span class="tile" >Филадельфия</span>
-            <span class="tile" >Детройт</span>
+
+          <details class="tiles-container menu-tiles-container">
+            <summary id="Десерты">Десерты</summary>
+
+            <div class="tile">
+              <img src="./static/menu/ck-newyork.webp" alt="Иллюстрация к блюду Чизкейк Нью-Йорк">
+              <div class="menu-text">
+                <h3>Чизкейк Нью-Йорк</h3>
+                <p class="menu-price">249₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/mochi-cherry.webp" alt="Иллюстрация к блюду Моти Шоколад-вишня">
+              <div class="menu-text">
+                <h3>Моти Шоколад-вишня</h3>
+                <p class="menu-price">249₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/mochi-popcorn.webp" alt="Иллюстрация к блюду Моти Карамельный попкорн">
+              <div class="menu-text">
+                <h3>Моти Карамельный попкорн</h3>
+                <p class="menu-price">249₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/mochi-milky.webp" alt="Иллюстрация к блюду Моти Молочные тропики">
+              <div class="menu-text">
+                <h3>Моти Молочные тропики</h3>
+                <p class="menu-price">249₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/mochi-mango.webp" alt="Иллюстрация к блюду Моти Клубничное манго">
+              <div class="menu-text">
+                <h3>Моти Клубничное манго</h3>
+                <p class="menu-price">249₽</p>
+              </div>
+            </div>
+
           </details>
-          <details class="tiles-container menu-tiles-container" name="menu">
-            <summary>Супы</summary>
-            <span class="tile" >Суп с котом</span>
-            <span class="tile" >Интересное варево</span>
+
+          <details class="tiles-container menu-tiles-container">
+            <summary id="Закуски">Закуски</summary>
+
+            <div class="tile">
+              <img src="./static/menu/tomyum.webp" alt="Иллюстрация к блюду суп Том-ям">
+              <div class="menu-text">
+                <h3>суп Том-ям</h3>
+                <p class="menu-price">449₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/miso.webp" alt="Иллюстрация к блюду Мисо суп">
+              <div class="menu-text">
+                <h3>Мисо суп</h3>
+                <p class="menu-price">249₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/udon.webp" alt="Иллюстрация к блюду Удон с креветками">
+              <div class="menu-text">
+                <h3>Удон с креветками</h3>
+                <p class="menu-price">399₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/chuka.webp" alt="Иллюстрация к блюду Салат Чука">
+              <div class="menu-text">
+                <h3>Салат Чука</h3>
+                <p class="menu-price">299₽</p>
+              </div>
+            </div>
+
           </details>
-          <details class="tiles-container menu-tiles-container" name="menu">
-            <summary>Салаты</summary>
-            <span class="tile" >Салат Чука</span>
-            <span class="tile" >Салат Гека</span>
+
+          <details class="tiles-container menu-tiles-container">
+            <summary id="Роллы и онигири">Роллы и онигири</summary>
+
+            <div class="tile">
+              <img src="./static/menu/roll-philadelphia.webp" alt="Иллюстрация к блюду Филадельфия">
+              <div class="menu-text">
+                <h3>Филадельфия</h3>
+                <p class="menu-price">499₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/roll-dragoneel.webp" alt="Иллюстрация к блюду Дракон с угрём">
+              <div class="menu-text">
+                <h3>Дракон с угрём</h3>
+                <p class="menu-price">499₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/roll-california.webp" alt="Иллюстрация к блюду Калифорния в икре">
+              <div class="menu-text">
+                <h3>Калифорния в икре</h3>
+                <p class="menu-price">399₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/oni-shrimp.webp" alt="Иллюстрация к блюду Онигири с креветками">
+              <div class="menu-text">
+                <h3>Онигири с креветками</h3>
+                <p class="menu-price">199₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/oni-salmon.webp" alt="Иллюстрация к блюду Онигири с лососем">
+              <div class="menu-text">
+                <h3>Онигири с лососем</h3>
+                <p class="menu-price">199₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/oni-crab.webp" alt="Иллюстрация к блюду Онигири с крабом">
+              <div class="menu-text">
+                <h3>Онигири с крабом</h3>
+                <p class="menu-price">199₽</p>
+              </div>
+            </div>
+
           </details>
+
+          <details class="tiles-container menu-tiles-container">
+            <summary id="Сеты">Сеты</summary>
+
+            <div class="tile">
+              <img src="./static/menu/set-prestige.webp" alt="Иллюстрация к блюду Сет Престиж">
+              <div class="menu-text">
+                <h3>Сет Престиж</h3>
+                <p class="menu-price">1499₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/set-kilo.webp" alt="Иллюстрация к блюду Кило сет">
+              <div class="menu-text">
+                <h3>Кило сет</h3>
+                <p class="menu-price">1499₽</p>
+              </div>
+            </div>
+
+            <div class="tile">
+              <img src="./static/menu/set-baked.webp" alt="Иллюстрация к блюду Запечёный сет">
+              <div class="menu-text">
+                <h3>Запечёный сет</h3>
+                <p class="menu-price">999₽</p>
+              </div>
+            </div>
+
+          </details>
+
+
         </div>
       </div>
 

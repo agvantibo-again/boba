@@ -1,0 +1,151 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  background-color: azure;
+  color: #390817;
+}
+
+#global-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+}
+
+#header h1 {
+  margin-top: 0;
+}
+
+#menu-title {
+  margin-top: 3.5rem;
+}
+
+#main {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+#footer {
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: auto;
+}
+
+#footer ul {
+  list-style-type: square;
+}
+
+#logo {
+  margin: 1rem;
+}
+
+.responsive-image {
+  height: 40vh;
+  width: auto;
+  max-width: 90%;
+  object-fit: cover;
+}
+
+.tiles-container {
+  margin-left: 2em;
+  margin-right: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+  /* white-space: pre-line; */
+}
+
+.menu-tiles-container summary {
+  font-weight: 500;
+  font-size: larger;
+}
+
+.menu-tiles-container .tile {
+  margin: 1rem;
+}
+
+.tile {
+  display: flex;
+  align-items: center;
+
+  flex: 1 0 30%;
+  background-color: white;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 1em;
+  color: initial;
+  text-decoration: none;
+
+  transition: transform 0.2s ease-in-out;
+
+  /* height: fit-content;
+  width: fit-content; */
+}
+
+
+.tile .tile-text {
+  margin-left: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  max-height: 90%;
+}
+
+.tile img {
+  height: 4em;
+  width: auto;
+  object-fit: contain;
+}
+
+.menu-tiles-container {
+  font-size: larger;
+  transition: none;
+}
+
+.menu-tiles-container img {
+  height: 16em;
+  width: auto;
+  object-fit: contain;
+  border-radius: inherit;
+}
+
+.menu-tiles-container .tile {
+  flex-flow: row;
+  aspect-ratio: 16 / 9;
+}
+
+.menu-text {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding-left: 1rem;
+  overflow: hidden;
+  max-height: 90%;
+
+  font-size: larger;
+  display: block;
+}
+
+.menu-text h1 {
+  box-sizing: content-box;
+}
+
+.menu-price {
+  background: #690015;
+  color: azure;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.action-tiles-container .tile:hover {
+  transform: scale(1.05);
+}
