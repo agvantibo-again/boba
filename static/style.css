@@ -106,36 +106,36 @@ body {
 .menu-tiles-container {
   font-size: larger;
   transition: none;
+  margin-left: 1rem;
+  flex-flow: row wrap;
 }
 
 .menu-tiles-container img {
-  height: 16em;
-  width: auto;
+  height: auto;
+  width: 60vw;
   object-fit: contain;
   border-radius: inherit;
 }
 
 .menu-tiles-container .tile {
-  flex-flow: row;
-  aspect-ratio: 16 / 9;
+  flex-flow: column;
+  max-width: 80vw;
 }
 
 .menu-text {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  padding-left: 1rem;
   overflow: hidden;
   max-height: 90%;
 
   font-size: larger;
-  display: block;
+  display: flexbox;
+  flex-flow: row;
+  margin-top: 1rem;
 }
 
-.menu-text h1 {
+.menu-text h3 {
   box-sizing: content-box;
+  margin-bottom: 0;
+  display: inline;
 }
 
 .menu-price {
@@ -144,6 +144,8 @@ body {
   padding: 0.5rem;
   border-radius: 1rem;
   display: inline-block;
+  margin: 0;
+  margin-top: 0;
 }
 
 .action-tiles-container .tile:hover {
