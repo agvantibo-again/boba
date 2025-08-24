@@ -21,22 +21,25 @@
 import csv
 
 start_line = """
-          <details class="tiles-container menu-tiles-container">
-            <summary id="{category}">{category}</summary>
-"""
+          <details class="tiles-container menu-tiles-container pop-tile">
+            <summary id="{category}">
+              <span>{category}</span>
+              <img src="./static/menu/{category}.webp" alt="Иллюстрация к категории меню &quot{category}&quot ">
+            </summary>
+""".strip("\n")
 tile = """
-            <div class="tile">
+            <div class="tile pop-tile">
               <img src="./static/menu/{id}.webp" alt="Иллюстрация к блюду {pretty_name}">
               <div class="menu-text">
                 <h3>{pretty_name}</h3>
                 <p class="menu-price">{price}₽</p>
               </div>
             </div>
-"""
+""".strip("\n")
 
 end_line = """
           </details>
-"""
+""".strip("\n")
 
 menu_map = dict()
 
@@ -67,4 +70,4 @@ def main():
 
 
 if __name__ == "__main__":
-    print(''.join(main()))
+    print('\n'.join(main()))

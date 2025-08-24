@@ -11,21 +11,36 @@ body {
   min-height: 100vh;
 }
 
-.title {
+#title {
   text-align: center;
-}
-
-#header h1 {
-  margin-top: 0;
+  margin: 0.5rem;
 }
 
 #menu-title {
-  margin-top: 3.5rem;
+  margin-top: 0rem;
+  margin-left: 1rem;
 }
 
-#main {
-  max-width: 800px;
-  margin: 2rem auto;
+#header {
+  margin: 0.1rem;
+  display: flex;
+  flex-flow: row;
+}
+
+#logo {
+  margin: 1rem;
+  height: auto;
+  max-width: 30%;
+  object-fit: cover;
+}
+
+#telegram-order {
+  margin: auto;
+  padding: 3rem 1rem;
+  height: 3rem;
+  max-width: 16rem;
+
+  background-color: white;
 }
 
 #footer {
@@ -38,15 +53,9 @@ body {
   list-style-type: square;
 }
 
-#logo {
-  margin: 1rem;
-}
-
-.responsive-image {
-  height: 40vh;
-  width: auto;
-  max-width: 90%;
-  object-fit: cover;
+#main {
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
 .tiles-container {
@@ -57,6 +66,18 @@ body {
   justify-content: center;
   gap: 2rem;
   /* white-space: pre-line; */
+}
+
+.pop-tile {
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1em;
+  color: initial;
+  text-decoration: none;
+}
+
+.tiles-container summary img {
+  display: inline-block;
 }
 
 .menu-tiles-container summary {
@@ -71,15 +92,9 @@ body {
 .tile {
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  flex: 1 0 30%;
-  background-color: white;
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  border-radius: 1em;
-  color: initial;
-  text-decoration: none;
-
+  flex: 2 2 auto;
   transition: transform 0.2s ease-in-out;
 
   /* height: fit-content;
@@ -88,17 +103,15 @@ body {
 
 
 .tile .tile-text {
-  margin-left: 2em;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: auto;
+  padding: 0 inherit;
   overflow: hidden;
-  max-height: 90%;
+  height: 4rem;
+  text-align: center;
 }
 
 .tile img {
-  height: 4em;
+  height: 3.6em;
   width: auto;
   object-fit: contain;
 }
@@ -108,18 +121,26 @@ body {
   transition: none;
   margin-left: 1rem;
   flex-flow: row wrap;
+
+  background-color: white;
+  margin-bottom: 0.5rem;
 }
 
 .menu-tiles-container img {
   height: auto;
   width: 60vw;
   object-fit: contain;
-  border-radius: inherit;
+  border-radius: 1rem;
 }
 
 .menu-tiles-container .tile {
   flex-flow: column;
   max-width: 80vw;
+
+  background-color: white;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+
+  padding: 0.7rem;
 }
 
 .menu-text {
