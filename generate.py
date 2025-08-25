@@ -23,7 +23,7 @@ import csv
 start_line = """
           <details class="tiles-container menu-tiles-container pop-tile">
             <summary id="{category}">
-              <span>{category}</span>
+              {category}<br>
               <img src="./static/menu/{category}.webp" alt="Иллюстрация к категории меню &quot{category}&quot ">
             </summary>
 """.strip("\n")

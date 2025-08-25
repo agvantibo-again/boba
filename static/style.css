@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 100vh;
 }
 
 #title {
@@ -120,7 +121,6 @@ body {
   font-size: larger;
   transition: none;
   margin-left: 1rem;
-  flex-flow: row wrap;
 
   background-color: white;
   margin-bottom: 0.5rem;
@@ -131,6 +131,7 @@ body {
   width: 60vw;
   object-fit: contain;
   border-radius: 1rem;
+  display: block;
 }
 
 .menu-tiles-container .tile {
