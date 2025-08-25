@@ -77,10 +77,6 @@ body {
   text-decoration: none;
 }
 
-.tiles-container summary img {
-  display: inline-block;
-}
-
 .menu-tiles-container summary {
   font-weight: 500;
   font-size: larger;
@@ -131,7 +127,7 @@ body {
   width: 60vw;
   object-fit: contain;
   border-radius: 1rem;
-  display: block;
+  max-width: 100%;
 }
 
 .menu-tiles-container .tile {
